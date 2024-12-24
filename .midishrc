@@ -1,0 +1,16 @@
+dnew 0 "j2a_bridge" ro
+dnew 1 "nanoKEY" ro
+dnew 2 "FLUID Synth (fsgm)" wo
+dnew 3 "nanoPAD" ro
+metrocf {non {2 9} 37 60} {non {2 9} 37 20}
+#dnew 3 "FLUID Synth (metro)" wo
+#metrocf {non {3 9} 37 60} {non {3 9} 37 20}
+dclkrx 0
+inew teclado {1 0}
+onew sinte {2 0}
+inew pad {3 0}
+onew perc {2 9}
+fnew filtro
+fmap {any teclado} {any sinte}
+fmap {any pad} {any perc}
+

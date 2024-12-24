@@ -1,0 +1,19 @@
+# ecasound chainsetup file
+
+# general 
+-b:256 -r:70 -z:intbuf -z:db,100000 -n:"untitled-chainsetup" -X -z:noxruns -z:nopsr -z:mixmode,sum
+
+# audio inputs 
+-a:chain-1559555710 -f:s16_le,2,44100 -i:prueba.wav,
+-a:chain-1559557762 -f:s16_le,2,44100 -i:prueba.wav,
+-a:chain-1559557765 -f:s16_le,2,44100 -i:prueba.wav,
+-a:chain-1559562915 -f:s16_le,2,44100 -i:prueba.wav,
+-a:chain-1559562934 -f:s16_le,2,44100 -i:prueba.wav,
+
+# audio outputs 
+-a:chain-1559555710 -f:f32_le,2,44100 -o:jack,system,
+-a:chain-1559557762 -f:f32_le,2,44100 -o:jack,system,
+-a:chain-1559557765 -f:f32_le,2,44100 -o:jack,system,
+-a:chain-1559562915 -f:f32_le,2,44100 -o:jack,system,
+-a:chain-1559562934 -f:f32_le,2,44100 -o:jack,system,
+
